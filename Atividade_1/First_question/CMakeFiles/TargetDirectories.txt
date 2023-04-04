@@ -1,0 +1,3 @@
+/home/yuri/LP-1_CPP/Atividade_1/First_question/CMakeFiles/program.dir
+/home/yuri/LP-1_CPP/Atividade_1/First_question/CMakeFiles/edit_cache.dir
+/home/yuri/LP-1_CPP/Atividade_1/First_question/CMakeFiles/rebuild_cache.dir
