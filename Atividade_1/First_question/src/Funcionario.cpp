@@ -1,13 +1,15 @@
 #include <Funcionario.h>
 #include <string>
+#include <vector>
 
 using namespace std;
 
-Funcionario(){
-    this.salario = 0;
+Funcionario::Funcionario()
+{
 }
 
-Funcionario(string nome, double salario, string departamento){
+Funcionario::Funcionario(string nome, double salario, string departamento)
+{
     this->nome = nome;
     this->salario = salario;
     this->departamento = departamento;

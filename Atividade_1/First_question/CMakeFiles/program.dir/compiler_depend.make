@@ -152,7 +152,12 @@ CMakeFiles/program.dir/src/Funcionario.cpp.o: src/Funcionario.cpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/program.dir/src/Program.cpp.o: src/Program.cpp \
   /usr/include/stdc-predef.h \
@@ -342,14 +347,6 @@ CMakeFiles/program.dir/src/Program.cpp.o: src/Program.cpp \
   /usr/include/c++/11/bits/vector.tcc
 
 
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/vector:
-
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/istream:
@@ -374,10 +371,6 @@ CMakeFiles/program.dir/src/Program.cpp.o: src/Program.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
-/usr/include/c++/11/bits/stl_vector.h:
-
-/usr/include/c++/11/system_error:
-
 /usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/c++/11/bits/locale_classes.h:
@@ -393,6 +386,18 @@ CMakeFiles/program.dir/src/Program.cpp.o: src/Program.cpp \
 /usr/include/c++/11/ostream:
 
 src/Program.cpp:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/system_error:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/vector:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
