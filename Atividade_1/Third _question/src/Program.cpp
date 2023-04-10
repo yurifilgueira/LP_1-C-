@@ -6,6 +6,7 @@ de avaliação de um livro. Por fim, escreva outra função que calcula a
 média de todas as notas de avaliação de todos os livros no “vector”.*/
 
 #include <iostream>
+#include <iomanip>
 #include <Book.h>
 #include <string>
 #include <vector>
@@ -14,6 +15,46 @@ using std::cout;
 using std::endl;
 using std::string;
 using std::vector;
+
+double sumAllRatingBooks(vector<Book> &books)
+{
+
+    double sum = 0;
+
+    for (Book book : books)
+    {
+        vector<double> ratings = book.getEvaluationScores();
+
+        for (double r : ratings)
+        {
+            sum += r;
+        }
+    }
+
+    return sum;
+}
+
+double averageRatingAllBooks(vector<Book> &books)
+{
+    double averageRating;
+    int qtt = 0;
+
+    for (Book book : books)
+    {
+        qtt += book.getEvaluationScores().size();
+    }
+
+    if (qtt == 0)
+    {
+        return 0;
+    }
+
+    double sum = sumAllRatingBooks(books);
+
+    averageRating = sum / qtt;
+
+    return averageRating;
+}
 
 int main()
 {
@@ -56,6 +97,17 @@ int main()
         cout << book.getTitle() << ":" << endl;
         book.printScores();
     }
+
+    cout << "Average ratings of the books:" << endl;
+
+    for (Book book : books)
+    {
+        cout << book.getTitle() << ":" << endl;
+        cout << std::setprecision(2) << book.averageRating() << endl;
+        cout << endl;
+    }
+
+    cout << "Average ratings of all books: " << averageRatingAllBooks(books) << endl;
 
     return 0;
 }

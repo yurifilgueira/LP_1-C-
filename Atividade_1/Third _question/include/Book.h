@@ -22,8 +22,9 @@ public:
     void setTitle(string title);
     string getAuthor();
     void setAuthor(string author);
+    vector<double> getEvaluationScores();
     void printScores();
-    double averageScore();
+    double averageRating();
     void addScore(double score);
 };
 

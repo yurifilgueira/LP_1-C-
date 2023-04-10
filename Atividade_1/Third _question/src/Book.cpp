@@ -38,6 +38,11 @@ void Book::setAuthor(string author)
     this->author = author;
 }
 
+vector<double> Book::getEvaluationScores()
+{
+    return this->evaluationScores;
+}
+
 void Book::printScores()
 {
     int i = 1;
@@ -47,9 +52,22 @@ void Book::printScores()
              << i << "->" << score << endl;
         i++;
     }
+    cout << endl;
 }
 
-// double Book::averageScore() {}
+double Book::averageRating()
+{
+    double averageRating = 0;
+
+    for (double s : evaluationScores)
+    {
+        averageRating += s;
+    }
+
+    averageRating /= evaluationScores.size();
+
+    return averageRating;
+}
 
 void Book::addScore(double score)
 {
